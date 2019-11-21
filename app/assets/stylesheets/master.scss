@@ -11,6 +11,17 @@
   margin-bottom: 15px;
   padding: 20px;
   h1, h2, h3, h4, h5, h6 {
+}
+body {
+  background: image_url('cork-board.png');
+}  
+.navbar {
+  background: image_url('cork-board.png');
+  box-shadow: 0px 1px 3px #2a2a2a;
+  } 
+body {
+  background: url('assets/cork-board.png');
+   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }    
 
 }
