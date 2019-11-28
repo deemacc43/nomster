@@ -2,7 +2,6 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'nomster-demond-mcelrath.herokuapp.com'}
   # Settings specified here will take precedence over those in config/application.rb.
   # Code is not reloaded between requests.
-end
   config.cache_classes = true
 
   # Eager load code on boot. This eager loads most of Rails and
