@@ -5,12 +5,12 @@ before_action :authenticate_user!, only: [:new, :create]
     @places = Place.all
   end 
 
-    def new
-      @place = Place.new
+  def new
+    @place = Place.new
   end
 
   def create
-    current_user .Places.create(place_params)
+    current_user.places.create(place_params)
     redirect_to root_path
   end
 
@@ -20,24 +20,22 @@ before_action :authenticate_user!, only: [:new, :create]
 
   def edit
     @place = Place.find(params[:id])
+    @place.update_attributes(place_params)
+    redirect_to root_path
+  end
+
+  def update
   end
 
 
   private
 
   def place_params
-    params.require(:place).peremit(:name, :description, :address)
+    params.require(:place).permit(:name, :description, :address)
   end
+end
 
- end 
+ 
 
- def show
- end
-
- private
-
- def place_params
-  params.require(:place).permit(:name, :description, :address)
- end
 
 
