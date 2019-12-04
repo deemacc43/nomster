@@ -10,34 +10,36 @@ h1 {
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
   background: #fff;
-  bordwe: 1px solid #ccc;
+  border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
-  h1, h2, h3, h4, h5, h6 {
+
 }
 body {
   background: image_url('cork-board.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
 }  
+
 .navbar {
   background: image_url('cork-board.png');
   box-shadow: 0px 1px 3px #2a2a2a;
-  } 
-body {
-  background: url('assets/cork-board.png');
-   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+  
+   }
    .navbar-inverse .navbar-brand {
       color: #DE781F;
       font-family: 'open_sansextrabold_italic';
-      font-size: 26px;  
+      font-size: 26px; 
+      }
 
       .invalid-feedback {
         color: #ff3333;
-        background-color: #FFEEEE
+        background-color: #FFEEEE;
         border-radius: 3px;
         padding: 2px 8px 2px 8px;
       }                                                                                                           
-   } 
-  }   
-}
+    
+
