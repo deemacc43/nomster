@@ -30,7 +30,13 @@ body {
    .navbar-inverse .navbar-brand {
       color: #DE781F;
       font-family: 'open_sansextrabold_italic';
-      font-size: 26px;                                                                                                             
+      font-size: 26px;  
+
+      .invalid-feedback {
+        background-color: #FFEEEE
+        border-radius: 3px;
+        padding: 2px 8px 2px 8px;
+      }                                                                                                           
    } 
   }   
 }
