@@ -14,9 +14,9 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
     if @place.valid?
     redirect_to root_path
   else
-    render :new, status: :unprocessable_entity
+  render :new, status: :unprocessable_entity
   end #lines 12-18
-
+ end
   def show
     @place = Place.find(params[:id])
     end #lines 20-22
@@ -27,6 +27,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
     if @place.user != current_user
       return render plain: 'Not Allowed', status: forbidden
     end #lines 24-29
+  end
    
 
   def update
@@ -42,6 +43,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
    else
     render :edit, status: :unprocessable_entity
   end #lines 39-44
+end
 
   def destroy
     @place = Place.find(params[:id])
