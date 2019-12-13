@@ -61,6 +61,11 @@ end
   def place_params
     params.require(:place).permit(:name, :description, :address);
   end #lines 59-61
+
+def show
+  @place = Place.find(params[:id])
+  @comment = Comment.new
+end
  end
  
 
