@@ -19,6 +19,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
  end
   def show
     @place = Place.find(params[:id])
+    @comment = Comment.new
     end #lines 20-22
 
   def edit
@@ -61,12 +62,7 @@ end
   def place_params
     params.require(:place).permit(:name, :description, :address);
   end #lines 59-61
-
-def show
-  @place = Place.find(params[:id])
-  @comment = Comment.new
 end
- end
  
 
 
