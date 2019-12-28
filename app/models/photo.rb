@@ -1,2 +1,3 @@
-class Photo < ApplicationRecord
+class Photo < ApplicationRecord: :Base
+mount_uploader  
 end

@@ -20,6 +20,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
   def show
     @place = Place.find(params[:id])
     @comment = Comment.new
+     @photo = Photo.new
     end #lines 20-22
 
   def edit
@@ -64,11 +65,7 @@ end
   end #lines 59-61
 end
 
-def show
-  @place = Place.find(params[:id])
-  @comment = Comment.new
-  @photos = photo.new
-end
+
 
  
 
