@@ -119,10 +119,17 @@
            </div>
            <% end %> 
          </div>
+         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+         <%= f.input :picture %>
+         <%= f.input :caption  %>
+         <%= f.submit "Add a photo", class: 'btn btn-primary'
+         <% end %>
          <%= simple_form_for @comment, url: '#' do |f| %>
          <%= f.input :message %>
-         <%= f.input :rating  %>
+         <%= f.input :rating %>
          <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
-         <%= f.submit "Add a photo", class: 'btn btn-primary'
+         <% end %>
+
          <% @place.photos.each do |photo| %>
+         <%= f.input :picture %>
      <% end %>

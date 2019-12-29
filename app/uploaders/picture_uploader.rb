@@ -44,4 +44,6 @@ class PictureUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+  # storage :file
+  storage :aws
 end
