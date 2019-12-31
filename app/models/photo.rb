@@ -1,4 +1,4 @@
-class Photo < ApplicationRecord: :Base
+class Photo < ApplicationRecord
   mount_uploader :picture, PictureUploader 
    end 
 
