@@ -9,7 +9,7 @@ Rails.application.configure do
    #enable_starttls_auto: true,
    #user_name: ENV['GMAIL_ADDRESS'],
    #password: ENV['GMAIL_PASSWORD']
-  }
+  
 
   #config.action_mailer.default_url_options = { host: 'localhost: 3030'}
   # Settings specified here will take precedence over those in config/application.rb.
@@ -70,5 +70,4 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-end
-end
+ end
