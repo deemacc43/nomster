@@ -73,6 +73,6 @@ gem "font-awesome-rails"
 gem 'devise'
 gem "geocoder"
 gem "figaro"
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'carrierwave-aws'
 gem "figaro"
